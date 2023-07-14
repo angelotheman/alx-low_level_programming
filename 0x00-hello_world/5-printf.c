@@ -3,6 +3,8 @@
 /**
   * main - Entry point of the function main
   *
+  * Description : Using the printf function
+  *
   * Return : Always 0 (Success)
   */
 
