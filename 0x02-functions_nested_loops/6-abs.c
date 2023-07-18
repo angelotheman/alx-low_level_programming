@@ -2,20 +2,20 @@
 
 /**
   * _abs - This function calculates the absolute value of digits
-  * @int: Value to be processed
+  * @a: Value to be processed
   *
   * Returns: The absolute number of the integer
   */
 
-int _abs(int)
+int _abs(int a)
 {
-	if (int < 0)
+	if (a < 0)
 	{
-		int value = 0 - int;
-		return (int);
+		int value = 0 - a;
+		return (value);
 	}
 	else
 	{
-		return (int);
+		return (a);
 	}
 }
