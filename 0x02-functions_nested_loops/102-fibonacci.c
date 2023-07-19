@@ -9,21 +9,17 @@
 int main(void)
 {
 	int i;
-	int num1 = 1;
-	int num2 = 2;
-	int sum = 0;
-
-	printf("%d, ", num1);
-	printf("%d, ", num2);
+	long int num1 = 1;
+	long int num2 = 2;
+	long int sum = 0;
 
 	for (i = 0; i < 50; i++)
 	{
+		printf("%ld", num1);
 		sum = num1 + num2;
 
 		num1 = num2;
 		num2 = sum;
-
-		printf("%d", sum);
 
 		if (i == 49)
 			break;
