@@ -13,6 +13,9 @@ int main(void)
 	int num2 = 2;
 	int sum = 0;
 
+	printf("%d, ", num1);
+	printf("%d, ", num2);
+
 	for (i = 0; i < 50; i++)
 	{
 		sum = num1 + num2;
