@@ -12,16 +12,9 @@ void print_to_98(int n)
 {
 	if (n > 98)
 	{
-		int a;
-		
-		for (a = n; a >= 98; a--)
+		for (n = n; n > 98; n--)
 		{
-			printf("%d", a);
-			if (a > 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			printf("%d, ", n);
 		}
 	}
 	else if (n == 98)
@@ -30,24 +23,9 @@ void print_to_98(int n)
 	}
 	else
 	{
-		int a;
-
-		for (a = n; a <= 98; a++)
+		for (n = n; n < 98; n++)
 		{
-			if (a / 10 != 0)
-			{
-				printf("%d", n);
-			}
-			else
-			{
-				printf("%d", n);
-			}
-
-			if (a < 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			printf("%d, ",n);
 		}
 	}
 }
