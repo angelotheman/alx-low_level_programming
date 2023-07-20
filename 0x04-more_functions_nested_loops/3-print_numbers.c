@@ -2,8 +2,6 @@
 
 /**
   * print_numbers - Prints all numbers in a range
-  *
-  * Return: 0 (Success)
   */
 
 void print_numbers(void)
@@ -14,6 +12,4 @@ void print_numbers(void)
 		_putchar(i);
 
 	_putchar('\n');
-
-	return (0);
 }
