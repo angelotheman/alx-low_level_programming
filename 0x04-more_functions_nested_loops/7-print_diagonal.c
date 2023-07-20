@@ -4,7 +4,6 @@
   * print_diagonal - Print diagonal characters
   * @n: The number of times to be printed
   *
-  * Return: 0 Success
   */
 
 void print_diagonal(int n)
@@ -25,6 +24,4 @@ void print_diagonal(int n)
 		sum++;
 		_putchar('\n');
 	}
-
-	return (0);
 }
