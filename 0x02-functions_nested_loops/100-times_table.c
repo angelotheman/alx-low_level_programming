@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,29 +8,36 @@
 
 void print_times_table(int n)
 {
-	int i;
-	int j;
+	int num, mult, prod;
 
-	if (n > 15 || n < 0)
+	if (n >= 0 && n <= 15)
 	{
-		return;
-	}
-	else
-	{
-		for (i = 0; i <= n; i++)
+		for (num = 0; num <= n; num++)
 		{
-			for (j = 0; j <= n; j++)
+			_putchar('0');
+		
+			for (mult = 1; mult <=n; mult++)
 			{
-				int sum = i * j;
+				_putchar(',');
+				_putchar(' ');
+				prod = num * mult;
 
-				printf("%d", sum);
-
-				if (j < n)
+				if (prod <= 99)
+					_putchar(' ');
+				if (prod <= 9)
+					_putchar(' ');
+				if (prod >= 100)
 				{
-					printf(", ");
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10)) % 10 + '0');
 				}
+				else if (prod <= 99 && prod >= 10)
+				{
+					_putchar((prod / 10) + '0');
+				}
+				_putchar((prod % 10) + '0');
 			}
-			printf("\n");
+			putchar('\n');
 		}
 	}
 }
