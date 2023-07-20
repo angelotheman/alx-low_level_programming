@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
   * Description - These are the functions for 0x04 more funcitons
   *
