@@ -4,7 +4,6 @@
   * print_square - Printing a square of all numbers
   * @size: The size of the square to be printed
   *
-  * Return: A square printed with #
   */
 
 void print_square(int size)
