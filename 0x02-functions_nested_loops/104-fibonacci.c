@@ -28,4 +28,6 @@ int main(void)
 		if (i < 98)
 			printf("\n");
 	}
+
+	return (0);
 }
