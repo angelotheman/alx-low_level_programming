@@ -1,10 +1,9 @@
-#include <stdio.h>
-
 /**
   * Description - These are the functions for 0x04 more funcitons
   *
   */
 
+int _putchar(int c);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
