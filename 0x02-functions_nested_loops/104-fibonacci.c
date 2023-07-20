@@ -22,12 +22,12 @@ int main(void)
 
 		printf("%lu", temp);
 
+		if (i < 98)
+			printf(", ");
 		a = b;
 		b = temp;
-
-		if (i < 98)
-			printf("\n");
 	}
+	printf("\n");
 
 	return (0);
 }
