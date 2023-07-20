@@ -1,4 +1,4 @@
-f#include "main.h"
+#include "main.h"
 
 /**
   * print_last_digit - Function to print the last digit of any number given
@@ -10,7 +10,7 @@ f#include "main.h"
 int print_last_digit(int a)
 {
 	int num;
-	
+
 	num = a % 10;
 
 	if (num < 10)
