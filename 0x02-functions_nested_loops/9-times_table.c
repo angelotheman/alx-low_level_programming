@@ -10,30 +10,36 @@ void times_table(void)
 {
 	int a;
 	int b;
+	int prod;
+	int mod;
+	int div;
 
 	for (a = 0; a <= 9; a++)
 	{
 		for (b = 0; b <= 9; b++)
 		{
-			int sum = a * b;
-
-			if (b < 9)
+			prod = a * y;
+			if (prod > 9)
 			{
-				if (sum < 10)
+				mod = prod % 10;
+				div = (prod - mod) / 10;
+				_putchar(',');
+				_putchar(' ');
+				_putchar(div + '0');
+				_putchar(mod + '0');
+			}
+			else
+			{
+				if (y != 0)
 				{
-					_putchar(sum + '0');
-					_putchar(',');
+					_puthcar(',');
+					_putchar(' ');
 					_putchar(' ');
 				}
-				else
-				{
-					_putchar((sum / 10) + '0');
-					_putchar((sum % 10) + '0');
-					_putchar(',');
-				}
-				_putchar(' ');
+				_putchar(prod + '0');
 			}
 		}
 		_putchar('\n');
 	}
+
 }
