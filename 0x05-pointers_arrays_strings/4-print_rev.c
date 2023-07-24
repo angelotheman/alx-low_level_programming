@@ -9,7 +9,7 @@
 
 void print_rev(char *s)
 {
-	char *last = strlen(s)
+	char *last = strlen(s);
 
 	while (last >= s)
 	{
