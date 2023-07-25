@@ -9,8 +9,6 @@
 
 void puts2(char *str)
 {
-	int a = 0;
-
 	if (str == NULL)
 		return;
 
