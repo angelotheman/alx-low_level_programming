@@ -12,11 +12,9 @@ void puts2(char *str)
 	if (str == NULL)
 		return;
 
-	while (*str != '\0')
+	while (*str != '\0' && *(str + 1) != '\0')
 	{
-		if (*str >= 32 && *str <= 126)
-			_putchar(*str);
-
+		_putchar(*str);
 		str += 2;
 	}
 	_putchar('\n');
