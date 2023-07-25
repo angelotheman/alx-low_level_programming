@@ -14,7 +14,8 @@ void puts2(char *str)
 
 	while (*str != '\0')
 	{
-		_putchar(*str);
+		if (*str >= 32 && *str <= 126)
+			_putchar(*str);
 
 		str += 2;
 	}
