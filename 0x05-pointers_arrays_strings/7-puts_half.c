@@ -21,7 +21,7 @@ void puts_half(char *str)
 	else
 		startIdx = length / 2;
 
-	second_half = str + (startIdx - 1);
+	second_half = startIdx;
 
 	while (*second_half != '\0')
 	{
