@@ -9,13 +9,13 @@
 
 void puts_half(char *str)
 {
+	char *second_half;
 	int length = strlen(str);
 	int startIdx = length / 2;
 
 	if (length % 2 != 0)
 		startIdx = (length - 1) / 2;
 
-	char *second_half;
 	
 	second_half = str + startIdx;
 
