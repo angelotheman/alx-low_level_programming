@@ -18,6 +18,8 @@ void puts_half(char *str)
 
 	if (length % 2 != 0)
 		startIdx = (length - 1) / 2;
+	else
+		startIdx = length / 2;
 
 	second_half = str + startIdx;
 
