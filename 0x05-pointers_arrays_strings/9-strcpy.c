@@ -1,4 +1,3 @@
-#include <string.h>
 #include "main.h"
 
 /**
@@ -9,7 +8,7 @@
   * Return: Pointer to the destination
   */
 
-void *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	char *pDest;
 
