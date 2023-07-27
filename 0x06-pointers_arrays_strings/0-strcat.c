@@ -13,21 +13,13 @@ char *_strcat(char *dest, char *src)
 	char *pFinal;
 	int a;
 
-	pFinal = dest;
-
-	while (*dest != '\0')
+	for (pFinal = dest; *pFinal != '\0'; pFinal++)
 	{
-		*pFinal = *dest;
-		pFinal++;
-		dest++;
+		while (*src != '\0')
+		{
+			*pFinal++ = *src++;
+		}
 	}
-
-	for (a = 0; src[i] != '\0' && dest[i] != '\0'; i++)
-	{
-		*pFinal = src[i];
-		pFinal++;
-	}
-
 	*pFinal = '\0';
 
 	return (pFinal);
