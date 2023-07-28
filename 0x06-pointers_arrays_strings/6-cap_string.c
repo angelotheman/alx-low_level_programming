@@ -2,12 +2,12 @@
 
 /**
   * cap_string - Capitalize every string
-  * @c: String to be capitalized
+  * @a: String to be capitalized
   *
   * Return: A capitalized string
   */
 
-char *cap_string(char *c)
+char *cap_string(char *a)
 {
 	int idx = 0;
 
