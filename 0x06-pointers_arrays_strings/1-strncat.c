@@ -24,10 +24,11 @@ char *_strncat(char *dest, char *src, int n)
 		dest++;
 	}
 
-	for (a = 0; a < n && src[a] != '\0'; a++)
+	while (a < n && src[a] != '\0')
 	{
 		*pFinal = src[a];
-		pFinal++;
+		a++;
+		src++;
 	}
 
 	*pFinal = '\0';
