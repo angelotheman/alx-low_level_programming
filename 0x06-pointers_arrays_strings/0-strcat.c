@@ -11,15 +11,23 @@
 char *_strcat(char *dest, char *src)
 {
 	char *pFinal;
-	int a;
 
-	for (pFinal = dest; *pFinal != '\0'; pFinal++)
+	pFinal = dest;
+	
+	while (*dest != '\0')
 	{
-		while (*src != '\0')
-		{
-			*pFinal++ = *src++;
-		}
+		*pFinal = *dest;
+		pFinal++;
+		dest++;
 	}
+
+	while (*src != '\0')
+	{
+		*pFinal = *src;
+		pFinal++;
+		src++;
+	}
+
 	*pFinal = '\0';
 
 	return (pFinal);
