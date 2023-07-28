@@ -20,6 +20,7 @@ char *cap_string(char *a)
 		    a[idx - 1] == '\t ||
 		    a[idx - 1] == '\n' ||
 		    a[idx - 1] == ',' ||
+		    a[idx - 1] == ';' ||
 		    a[idx - 1] == '.' ||
 		    a[idx - 1] == '!' ||
 		    a[idx - 1] == '?' ||
