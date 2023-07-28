@@ -12,26 +12,20 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char *pFinal;
-	int a;
+	int a = 0;
+	int b = 0;
 
-	pFinal = dest;
-
-	while (*dest != '\0')
-	{
-		*pFinal = *dest;
-		pFinal++;
-		dest++;
-	}
-
-	while (a < n && src[a] != '\0')
-	{
-		*pFinal = src[a];
+	while (dest[a] != '\0')
 		a++;
-		src++;
+
+	while (b < n && src[b] != '\0')
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
 	}
 
-	*pFinal = '\0';
+	dest[a] = '\0';
 
-	return (pFinal);
+	return (dest);
 }
