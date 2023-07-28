@@ -2,7 +2,7 @@
 
 /**
   * string_toupper - Changes lowercase to uppercase
-  * @a: Character to be changed
+  * @c: Character to be changed
   *
   * Return: Changed characters
   */
@@ -11,7 +11,7 @@ char *string_toupper(char *c)
 {
 	while (*c != '\0')
 	{
-		if (*c >= 97 && *c <= 122 || )
+		if (*c >= 97 && *c <= 122)
 		{
 			return (c - 32);
 		}
@@ -19,5 +19,6 @@ char *string_toupper(char *c)
 		{
 			return (c);
 		}
+		c++;
 	}
 }
