@@ -15,7 +15,7 @@ int sqrt_binary_search(int n, int low, int high);
 
 int _sqrt_recursion(int n)
 {
-	int (n <= 0)
+	if (n <= 0)
 		return (-1);
 
 	return (sqrt_binary_search(n, 0, n));
