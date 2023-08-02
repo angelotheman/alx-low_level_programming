@@ -3,9 +3,12 @@
 /**
   * is_prime_number - Checks for a prime number
   * @n: Integer to be checked
+  * @div: Helper argument
   *
   * Return: 1 if prime, 0 otherwise
   */
+
+int is_prime_recursive(int n, int div);
 
 int is_prime_number(int n)
 {
@@ -15,11 +18,10 @@ int is_prime_number(int n)
 	return (is_prime_recursive(n, 2));
 }
 
-
 /**
-  * is_prime_recursive - Helper function to iterate the figures
-  * @n: first argument
-  * @div: The divisor
+  * is_prime_recursive - Helper function
+  * @div: Helper argument
+  * @n: First argument
   *
   * Return: 1 if prime, 0 otherwise
   */
