@@ -20,6 +20,13 @@ int is_palindrome(char *s)
 	return (is_palindrome_recursive(s, 0, length - 1));
 }
 
+/**
+  * str_length - Find the length of the string
+  * @s: Args
+  *
+  * Return: Length of string (Int)
+  */
+
 int str_length(char *s)
 {
 	if (*s == '\0')
@@ -27,6 +34,15 @@ int str_length(char *s)
 
 	return (1 + str_length(s + 1));
 }
+
+/**
+  * is_palindrome_recursive - Checks if the palindrome is recursive
+  * @s: Start string
+  * @start: Forward pointer
+  * @end: Backward pointer
+  *
+  * Return: 1 if palindrome, 0 otherwise
+  */
 
 int is_palindrome_recursive(char *s, int start, int end)
 {
