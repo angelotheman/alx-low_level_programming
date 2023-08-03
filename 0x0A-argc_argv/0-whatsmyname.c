@@ -2,8 +2,8 @@
 
 /**
   * main - Entry point of program
-  * @argc - First argument
-  * @argv - Second argument
+  * @argc: First argument
+  * @argv: Second argument
   *
   * Return: 0 (Success)
   */
