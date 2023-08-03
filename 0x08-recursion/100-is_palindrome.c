@@ -30,10 +30,10 @@ int str_length(char *s)
 
 int is_palindrome_recursive(char *s, int start, int end)
 {
-	if (start >= end)
+	if (s[start] >= s[end])
 		return (1);
 
-	if (*start != *end)
+	if (s[start] != s[end])
 		return (0);
 
 	return (is_palindrome_recursive(s, start + 1, end - 1));
