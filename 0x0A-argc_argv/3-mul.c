@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int mult = 1;
 	int i;
 
-	if (argc - 1 == 0)
+	if (argc - 1 == 0 || argc - 1 == 1)
 	{
 		printf("Error\n");
 		return (1);
