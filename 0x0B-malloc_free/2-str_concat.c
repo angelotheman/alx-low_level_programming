@@ -12,12 +12,10 @@
   * Return: Pointer to string location
   */
 
-void copy_string(char *, char *);
+void copy_string(char *src, char *dest);
 
 char *str_concat(char *s1, char *s2)
 {
-	int a = 0;
-	int b = 0;
 	int s1_length = 0;
 	int s2_length = 0;
 	char *new_string;
@@ -37,7 +35,9 @@ char *str_concat(char *s1, char *s2)
 		s2_length++;
 	}
 
-	int total_length = s1_length + s2_length;
+	int total_length;
+
+	total_length = s1_length + s2_length;
 
 	new_string = (char *)malloc(total_length + 1);
 
