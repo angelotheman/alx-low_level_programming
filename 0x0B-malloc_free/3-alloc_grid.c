@@ -9,7 +9,7 @@
   * Return: NULL on failure, otherwise Pointer
   */
 
-int **alloc_grid(int width, height)
+int **alloc_grid(int width, int height)
 {
 	int i, j;
 	int **array;
@@ -19,7 +19,7 @@ int **alloc_grid(int width, height)
 		return (NULL);
 	}
 
-	array = (int **)malloc(height *sizeof(int *));
+	array = (int **)malloc(height * sizeof(int *));
 
 	if (array == NULL)
 	{
