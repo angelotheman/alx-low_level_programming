@@ -3,17 +3,23 @@
 
 /**
   * str_concat - Concatenate two strings with malloc
+  * copy_string - Helper function
   * @s1: First string
   * @s2: Second string
+  * @src: Source string
+  * @dest: Destination string
   *
   * Return: Pointer to string location
   */
 
+void copy_string(char *, char *);
+
 char *str_concat(char *s1, char *s2)
 {
+	int a = 0;
+	int b = 0;
 	int s1_length = 0;
 	int s2_length = 0;
-	int total_length = s1_length + s2_length;
 	char *new_string;
 
 	if (s1 == NULL || s2 == NULL)
@@ -31,6 +37,8 @@ char *str_concat(char *s1, char *s2)
 		s2_length++;
 	}
 
+	int total_length = s1_length + s2_length;
+
 	new_string = (char *)malloc(total_length + 1);
 
 	if (new_string == NULL)
@@ -38,17 +46,28 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (a = 0; a < s1_length && s1[a] != '\0'; a++)
-	{
-		new_string[a] = s1[a];
-	}
+	copy_string(s1, new_string);
+	copy_string(s2, new_string + s1_length);
 
-	for (b = 0; b < s2_length && s2[b] != '\0'; b++)
-	{
-		new_string[b] = s2[b];
-	}
-
-	new_string[b] = '\0';
+	new_string[total_length] = '\0';
 
 	return (new_string);
+}
+
+/**
+  * copy_string - Copies string from source to dest
+  * @src: source string
+  * @dest: destination string
+  *
+  * Return: 0 Success
+  */
+
+void copy_string(char *src, char *dest)
+{
+	while (*src != '\0')
+	{
+		*dest = *src;
+		src++;
+		dest++;
+	}
 }
