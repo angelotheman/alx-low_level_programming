@@ -19,6 +19,7 @@ char *str_concat(char *s1, char *s2)
 	int s1_length = 0;
 	int s2_length = 0;
 	char *new_string;
+	int total_length = 0;
 
 	if (s1 == NULL || s2 == NULL)
 	{
@@ -34,8 +35,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2_length++;
 	}
-
-	int total_length;
 
 	total_length = s1_length + s2_length;
 
