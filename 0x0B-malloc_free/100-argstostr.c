@@ -60,7 +60,7 @@ int str_len(char *str)
 	return (length);
 }
 
-char *strcat(char *dest, char *src)
+char *str_cat(char *dest, char *src)
 {
 	int dest_len = str_len(dest);
 	int src_len = str_len(src);
