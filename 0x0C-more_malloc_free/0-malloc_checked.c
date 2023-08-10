@@ -5,6 +5,7 @@
   * malloc_checked - Allocate memory using malloc
   * @b: Unsigned int arg
   *
+  * Return: Pointer to space alloted
   */
 
 void *malloc_checked(unsigned int b)
@@ -15,7 +16,7 @@ void *malloc_checked(unsigned int b)
 
 	if (a == NULL)
 	{
-		exit (98);
+		exit(98);
 	}
 
 	return (a);
