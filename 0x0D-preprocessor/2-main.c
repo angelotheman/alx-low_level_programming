@@ -2,9 +2,6 @@
 
 /**
   * main - Entry point of the code
-  * @argc: Argument count
-  * @argv: Argument value
-  *
   * Return: 0 Success
   */
 
