@@ -7,8 +7,6 @@
   * @name: second arg
   * @age: third arg
   * @owner: fourth arg
-  *
-  * Description: Initialize a struct class of dog
   */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
