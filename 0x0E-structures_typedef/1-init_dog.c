@@ -8,7 +8,6 @@
   * @age: third arg
   * @owner: fourth arg
   *
-  * Return: 0 (Success)
   * Description: Initialize a struct class of dog
   */
 
