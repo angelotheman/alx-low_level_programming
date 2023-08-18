@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdio.h>
 
 /**
   * print_numbers - Function to print all numbers
@@ -24,8 +25,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 		if (count < n - 1)
 		{
-			if (!separator)
-				printf("%c ", *separator);
+			printf("%c ", *separator);
 		}
 	}
 
