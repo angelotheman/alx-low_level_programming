@@ -8,9 +8,9 @@
   * Return: 0 Success
   */
 
-int main(int argc, char **argv[])
+int main(int argc, char *argv[])
 {
-	int a, b, total;
+	int a, b;
 	char *op;
 	int (*ptr_func)(int, int);
 
@@ -23,7 +23,7 @@ int main(int argc, char **argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	op = arg[2];
+	op = argv[2];
 
 	ptr_func = get_op_func(op);
 
