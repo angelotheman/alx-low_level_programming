@@ -10,13 +10,6 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	/**
-	  eg index = 6
-	  1. Condition: count = idx - 1 / 5
-	  2. head->next = head->next->next 
-	  3. head->next->next = NULL
-	  4. index = 0;
-	  */
 	listint_t *curr;
 	listint_t *temp;
 
