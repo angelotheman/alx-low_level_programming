@@ -10,9 +10,6 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	/**
-	  index 3.
-	  */
 	listint_t *curr;
 	listint_t *temp;
 
