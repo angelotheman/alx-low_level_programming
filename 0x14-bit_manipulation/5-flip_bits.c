@@ -8,7 +8,7 @@
   * Return: 0 int success
   */
 
-unsigned int flip_bits(unsigned long int n, unsigned long int m);
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int i = (n ^ m);
 	unsigned int count = 0;
