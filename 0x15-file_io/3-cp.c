@@ -24,13 +24,16 @@ void copy_file(int from, int to)
 {
 	ssize_t n;
 	char buf[BUFSIZE];
+	ssize_t written;
 
 	while ((n = read(from, buf, BUFSIZE)) > 0)
 	{
-		if (write(to, buf, n) != n)
-		{
-			error_exit("Error: Can't write to the destination file", 99);
-		}
+		written = write(to, buf, n);
+
+		if (written == -1)
+			error_exit("Error: Can't write to destination", 99);
+		else if (written != n)
+			error_exit("Error: Write did not complete", 99);
 	}
 
 	if (n == -1)
@@ -65,7 +68,7 @@ int main(int argc, char *argv[])
 		error_exit("Error: Can't read from the source file", 98);
 	}
 
-	fd_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 00664);
+	fd_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 
 	if (fd_to == -1)
 	{
