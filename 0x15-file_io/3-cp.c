@@ -25,7 +25,7 @@ void copy_file(int from, int to)
 	ssize_t n;
 	char buf[BUFSIZE];
 
-	while ((n == read(from, buf, BUFSIZE)) > 0)
+	while ((n = read(from, buf, BUFSIZE)) > 0)
 	{
 		if (write(to, buf, n) != n)
 		{
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 		error_exit("Error: Can't read from the source file", 98);
 	}
 
-	fd_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0064);
+	fd_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 00664);
 
 	if (fd_to == -1)
 	{
