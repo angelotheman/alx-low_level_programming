@@ -40,7 +40,7 @@ void file_close(int file_dp)
 	}
 }
 
-/** 
+/**
   * main - Emulates the cp command
   * @argc: The number of arguments
   * @argv: An array of pointers to the arguments.
