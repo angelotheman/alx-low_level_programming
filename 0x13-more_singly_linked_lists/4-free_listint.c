@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/**
+/f**
   * free_listint - Free everything else
   * @head: The nodes in your list
   *
