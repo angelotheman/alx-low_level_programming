@@ -17,7 +17,7 @@ oclean:
 	$(RM) $(OBJ)
 
 fclean:
-	clean oclean
+	$(RM) $(call space)clean oclean
 
 re:
-	fclean all
+	$(RM) $(call space)fclean all
