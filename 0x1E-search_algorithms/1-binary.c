@@ -39,6 +39,7 @@ int binary_search(int *array, size_t size, int value)
 /**
  * print_array - Prints out the array
  *
+ * @array: Pointer to the first element in the array
  * @start: Start of array
  * @end: End of array
  */
